@@ -13,4 +13,11 @@
 #### cv2.imshow('Clever Programmer Face Detector', img) => Name of the window that pops up in an image form. 
 #### cv2.waitKey() => This will keep the previous code and make the window up until a key is pressed to be closed. 
 #### grayscaled_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) => changing the color from Red Green Blue to Gray. 
+<br/>
+
+#### face_coordinates = trained_face_data.detectMultiScale(grayscaled_img) => detect faces in the image. Returns the coordinates of the rectangle surrounding the face. (x, y, w, h). 
+#### (x, y, w, h) = face_coordinates[0] 
+#### cv2.rectangle(img, (x,y), (x+w, y+h), (0, 255, 0), 2) => (img, 1st point on the rectangle, 2nd point on the rectangle, color of the rectangle, thickness of the rectangle)
+
+
 
