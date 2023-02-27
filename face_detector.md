@@ -1,4 +1,5 @@
 ## Face Detector App
+#### Clever Programmer - AI tutorial for beginners YOUTUBE
 ### Step by Step Process
 #### 1. Get many faces
 #### 2. Make them all black and white
@@ -17,7 +18,15 @@
 
 #### face_coordinates = trained_face_data.detectMultiScale(grayscaled_img) => detect faces in the image. Returns the coordinates of the rectangle surrounding the face. (x, y, w, h). 
 #### (x, y, w, h) = face_coordinates[0] 
-#### cv2.rectangle(img, (x,y), (x+w, y+h), (0, 255, 0), 2) => (img, 1st point on the rectangle, 2nd point on the rectangle, color of the rectangle, thickness of the rectangle)
+#### cv2.rectangle(img, (x,y), (x+w, y+h), (0, 255, 0), 2) => (img, 1st point on the rectangle, 2nd point on the rectangle, color of the rectangle, thickness of the rectangle) 
+#### use loops to go through the lists in the list -> for (x,y,w,h) in face_coordinates:
+<br/>
+
+## Detecting faces in a video?
+#### the only difference is detecting faces through loops.
+#### webcam = cv2.VideoCapture(0) => the 0 would mean the default cam
+#### while True: 
+#### successful_frame_read, frame = webcam.read() => returns a tuple. Returns a true or false value, then the image. 
 
 
 
