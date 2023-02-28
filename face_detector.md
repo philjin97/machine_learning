@@ -27,6 +27,13 @@
 #### webcam = cv2.VideoCapture(0) => the 0 would mean the default cam
 #### while True: 
 #### successful_frame_read, frame = webcam.read() => returns a tuple. Returns a true or false value, then the image. 
+#### grayscaled_img = cv2.ctvColor(frame, cv2.COLOR_BGR2GRAY)
+#### face_coordinates = trained_face_data.detectMultiScale(grayscaled_img)
+#### for (x, y, w, h) in face_coordinates:
+#### cv2.rectangle(frame, (x,y), (x+w, y+h), (randrange(256), randrange(256), rand))
+#### cv2.imshow('Clever Programmer Face Detector', grayscaled_img)
+#### cv2.waitKey(1) => if 0, waits until a key is hit. 1, moves with every second. You cannot display something if you don't use waitKey(). 
+#### 
 
 
 
